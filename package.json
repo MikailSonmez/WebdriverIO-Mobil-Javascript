@@ -1,0 +1,48 @@
+{
+  "name": "webdriverio-mobile-architecture",
+  "version": "1.0.0",
+  "description": "WebdriverIO Mobile Architecture",
+  "scripts": {
+    "test:localAndroid": "./node_modules/.bin/wdio ./config/local/wdio.android.conf.js",
+    "test:localiOS": "./node_modules/.bin/wdio ./config/local/wdio.ios.conf.js",
+    "test:localParallelAndroid": "./node_modules/.bin/wdio ./config/localParallel/wdio.android.conf.js",
+    "test:localiOS": "./node_modules/.bin/wdio ./config/localParallel/wdio.ios.conf.js",
+    "test:browserstackAndroid": "./node_modules/.bin/wdio ./config/browserStack/wdio.android.conf.js",
+    "test:browserstackiOS": "./node_modules/.bin/wdio ./config/browserStack/wdio.ios.conf.js",
+    "test:sauceLabsAndroid": "./node_modules/.bin/wdio ./config/sauceLabs/wdio.android.conf.js",
+    "test:sauceLabsiOS": "./node_modules/.bin/wdio ./config/sauceLabs/wdio.ios.conf.js",
+    "test:lambdatestAndroid": "./node_modules/.bin/wdio ./config/lambdaTest/wdio.android.conf.js",
+    "test:lambdatestiOS": "./node_modules/.bin/wdio ./config/lambdaTest/wdio.ios.conf.js"
+  },
+  "dependencies": {
+    "@wdio/cli": "^7.12.6",
+    "allure-commandline": "^2.13.8",
+    "axios": "^0.24.0",
+    "deepmerge": "^4.2.2",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.5",
+    "rimraf": "^3.0.2",
+    "wdio-cucumber-parallel-execution": "^3.6.15",
+    "webdriver": "^7.16.9",
+    "yargs": "^17.3.0"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^7.16.3",
+    "@wdio/appium-service": "^7.16.3",
+    "@wdio/browserstack-service": "^7.16.3",
+    "@wdio/crossbrowsertesting-service": "^7.16.14",
+    "@wdio/cucumber-framework": "^7.16.3",
+    "@wdio/local-runner": "^7.16.3",
+    "@wdio/sauce-service": "^7.16.13",
+    "@wdio/spec-reporter": "^7.16.3",
+    "browserstack-local": "^1.4.8",
+    "chai": "^4.3.4",
+    "country-emoji": "^1.5.6",
+    "cucumber-html-reporter": "^5.5.0",
+    "expect-webdriverio": "^3.1.4"
+  },
+  "keywords": [],
+  "author": "Enes Erdogan",
+  "license": "ISC",
+  "main": "index.js"
+}
