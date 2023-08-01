@@ -65,7 +65,7 @@ Feature: Login Page
     Then Faladdin should see Didnt Recive It: "<recive>" on the Login Page with Email
     Examples:
       | email                  | description                                          | button         | tryOther          | recive             |
-      | enes.erdgn32@gmail.com | Your magic link has been sent to your email address. | Open Email App | TRY OTHER OPTIONS | Didn't receive it? |
+      | A@gmail.com | Your magic link has been sent to your email address. | Open Email App | TRY OTHER OPTIONS | Didn't receive it? |
 
   @ContinueWithEmail @Send @PhoneBack
   Scenario Outline: Faladdin taps Phone Back on the Magic Login Page with Email
@@ -83,7 +83,7 @@ Feature: Login Page
     Then Faladdin should see Gmail
     Examples:
       | email                  |
-      | enes.erdgn32@gmail.com |
+      | A@gmail.com |
 
   @ContinueWithEmail @LoggedIn
   Scenario Outline: Faladdin logged in with "<email>" on the Login Page with Email
@@ -92,4 +92,4 @@ Feature: Login Page
     Then Faladdin should see the Home Page
     Examples:
       | email                  |
-      | enes.erdgn32@gmail.com |
+      | A@gmail.com |
