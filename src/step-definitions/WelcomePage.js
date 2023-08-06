@@ -4,6 +4,7 @@ const ElementHelper = require('../common/ElementHelper')
 
 Given(/^Faladdin is open the App$/, async () => {
     await WelcomePage.checkOpenApp()
+    
 });
 Then(/^Faladdin should see Icon on the Welcome Page$/, async () => {
     await WelcomePage.checkLogo()
